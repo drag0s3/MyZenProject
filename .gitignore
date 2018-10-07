@@ -1,5 +1,6 @@
 app.js
 *.img
 *.png
+*.svg
 desktop.ini
 /img
