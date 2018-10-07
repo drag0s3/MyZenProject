@@ -1,2 +1,5 @@
 app.js
 *.img
+*.png
+desktop.ini
+/img
