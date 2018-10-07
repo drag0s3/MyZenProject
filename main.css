@@ -1,0 +1,220 @@
+body {
+    background-color: #EAEAEA;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    color: white;
+    margin: 0px;
+    font-size:16;
+    padding: 0;
+    margin:0;
+}
+
+/* Header */
+header{
+    background-color: #638ca2; 
+    border-bottom: #d9263f 1.5px solid;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav #branding{
+    display:flex;
+    margin-left: 1em;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    display:flex;
+    line-height: 2;
+}
+
+nav ul li {
+    float: right;
+    display:flex;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    display: flex;
+    padding: .8rem 1rem;
+    font-size: 16;
+}
+
+nav ul li ul {
+    display:flex;
+    position: absolute;
+    flex-direction: column;
+}
+
+.dropdownmenu {
+    display: block;
+}
+
+nav ul li ul li {
+    display: none;
+    background-color: #638ca2; 
+    width: 100px;
+}
+
+nav ul li a:hover{
+    background-color: #d9263f;
+}
+
+nav ul li:hover ul li {
+    display: block;
+    position: relative;
+    text-decoration: none;
+
+}
+
+/* Global */
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+.button_1{
+    height:28px;
+    background: #d9263f;
+    border: #EAEAEA 1px solid;
+    padding-left:20px;
+    padding-right:20px;
+    color:white;
+}
+
+.form{
+    padding:15px;
+    color:black; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Contact form*/
+aside#sidebar {
+    padding-bottom: 520px;
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width:15%;
+    padding:5px;
+    background: #white;
+}
+
+
+/* Showcase */
+#showcase{
+    min-height: 400px;
+    background: url('img/promote.jpg') no-repeat 0 -300px;
+    text-align:center;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size:50px;
+    font-weight: 400;
+}
+
+#showcase p{
+    font-size:18px;
+}
+
+/* Newsletter */
+#newsletter{
+    padding:20px;
+    color: white;
+    background-color:#83aabe; 
+    border-bottom: #d9263f solid 1.5px;
+    border-top:  #d9263f solid 1.5px;
+}
+
+#newsletter h1{
+    float:left;
+    font-weight:400;
+}
+
+#newsletter form{
+    float:right;
+    margin-top:15px;
+    text-align: right;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height:25px;
+    width:250px;
+}
+
+/* Boxes */
+#boxes {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#boxes .box{
+    float:left;
+    width: 30%;
+    padding: 10px;
+    text-align:center;
+    color: black;
+}
+
+#boxes .box img{
+    width:120px;
+}
+
+/* Main-col */
+article#about{
+    float:center;
+    text-align:center;
+    color:black;
+    padding-bottom: 690px;
+}
+
+footer{
+    padding: 10px;
+    margin-top:10px;
+    color:white;
+    background-color: #83aabe; 
+    text-align:center;
+    font-size:10px;
+}
+
+/* Media Queries */
+@media(max-width:768px){
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box{
+        float:none;
+        text-align:center;
+        width:100%;
+    } 
+   
+    #showcase h1{ 
+        margin-top:40px;    
+             
+    }
+    #newsletter .button_1{
+        display:block;
+        width:100%;
+    }
+
+    #newsletter form input[type="email"]{
+        width:100%;
+        margin-bottom: 5px;
+
+    }
+}
+ 
+
+
+
+
+
